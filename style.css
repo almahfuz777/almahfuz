@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-color: grey;
+}
+/*navbar starts here*/
+nav{
+  background: #222222;
+  color: rgb(255, 255, 255);
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 8px 0px 8px;
+}
+.menu{
+  display: inline-flex;
+  padding: 25px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 7px; 
+  margin: 5px;
+}
+nav ul li a:hover{
+  color: cyan;
+  transition: 0.6s ease;
+}
+.centertext{
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.logopic{
+  background-image: url(images/logo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+
+/*navbar ends here*/
+.intro{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  display: flex;
+  background-color: rgb(107, 104, 104);
+  align-items: center;
+}
+.intropic{
+  background-image: url(images/me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 250px;
+}
+.introtext{
+  color: rgb(59, 50, 50);
+  margin-left: 20px;
+  font-weight: 7200;
+  padding: 25px;
+  border-left: rgb(83, 52, 194) 7px solid;
+  border-radius: 5px;
+}
+ul.socials{
+  list-style: none;
+  display: inline-flex;
+  margin-top: 50px;
+}
+ul.socials li{
+  list-style: none;
+  margin: 10px;
+}
+ul.socials li i.fab{
+  font-size: 25px;
+  color: white;
+}
+ul.socials li a{
+  background-color: rgb(127, 175, 179);
+  padding: 10px;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.5);
+}
+ul.socials li a:hover{
+  transform: translate(0,-10px);
+  transition: 0.5s;
+}
+ul.socials li:nth-child(1) a:hover{
+  background-color: #3b5999;
+}
+ul.socials li:nth-child(2) a:hover{
+  background-color: #e4405f;
+}
+ul.socials li:nth-child(3) a:hover{
+  background-color: #55acee;
+}
+ul.socials li:nth-child(4) a:hover{
+  background-color: #0077B5;
+}
+ul.socials li:nth-child(5) a:hover{
+  background-color: #171515;
+}
+
+/*introtext textanimation*/
+h1.dancingtext::after{
+  content: "Welcome to my freaking website";
+  animation: textanim 10s linear infinite;
+  border-radius: 5px;
+  padding: 3px;
+} 
+@keyframes textanim{
+  25%{content:"Nothing extraordinary here" }
+  50%{content:"Surviving, and that's all"}
+  75%{content:"Always in a sleepy mood zzZ"}
+  
+  25%{background-color: rgb(189, 45, 45)}
+  50%{background-color: rgb(25, 128, 71)}
+  75%{background-color: rgb(83, 52, 194);}
+}
+
+/*Footer section*/
+footer{
+position: absolute;
+bottom: 0;
+color: white;
+background-color: #171515;
+width: 100%;
+padding: 10px;
+text-align: center;
+}
+footer a{
+  text-decoration: none;
+  font-family: Roboto;
+  color: cyan;
+}
